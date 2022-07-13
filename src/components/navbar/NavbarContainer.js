@@ -9,7 +9,7 @@ import logo from "../../assets/logo.png";
 
 const NavbarContainer = () => {
   const [activeLink, setActiveLink] = useState("home");
-  const [isToggleActive, setIsToggleActive] = useState(true);
+  const [isToggleActive, setIsToggleActive] = useState(false);
   const [isOnTop, setIsOnTop] = useState(true);
 
   // checking if viewport is on the top of the screen
@@ -55,9 +55,11 @@ const NavbarContainer = () => {
   const servicesClasses =
     activeLink === "services" ? activeStyle : nonActiveStyle;
 
-  const navbarScrollingStyle = isOnTop
-    ? classes.navbarContainer
-    : `${classes.navbarContainer} ${classes.scrolled}`;
+  // const navbarScrollingStyle = isOnTop
+  //   ? classes.navbarContainer
+  //   : `${classes.navbarContainer} ${classes.scrolled}`;
+
+  const navbarScrollingStyle = `${classes.navbarContainer} ${classes.scrolled}`;
 
   return (
     <>
@@ -85,7 +87,7 @@ const NavbarContainer = () => {
               >
                 <Typography style={{ fontWeight: "bold" }}>Úvod</Typography>
               </Link>
-
+        
               <Link
                 to="/subsidy"
                 onClick={() => handleChangeSectionLink("subsidy")}

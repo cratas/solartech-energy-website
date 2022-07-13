@@ -6,11 +6,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useLocation } from "react-router-dom";
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+// or
+
 
 var theme = createTheme({
   typography: {
     "fontFamily": `"Roboto", "Helvetica", "Arial", sans-serif`,
-    "fontSize": 14,
+    "fontSize": 12,
     "fontWeightLight": 300,
     "fontWeightRegular": 400,
     "fontWeightMedium": 500,

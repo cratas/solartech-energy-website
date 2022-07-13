@@ -3,12 +3,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* white colours */
   --color-white: #fff;
-  --color-white-light: rgba(255, 255, 255, 0.836);
+  --color-white-dark: rgb(179, 179, 179);
 
-  --color-green: #000627;
-  --color-black: #111111;
-  --color-green-hover: #269258;
-  --color-navbar: rgba(255, 255, 255, 0.7);
+  /* navy colours */
+  --color-blue: #000629;
+  --color-blue-dark: #000314;
+
+  /* yellow colours */
+  --color-yellow: #F6AE2D;
 }
 
