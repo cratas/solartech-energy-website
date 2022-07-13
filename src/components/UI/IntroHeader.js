@@ -39,7 +39,7 @@ export const IntroHeader = () => {
       display={"flex"}
       justifyContent={"center"}
     >
-      <Box width={"40%"}>
+      <Box maxWidth={"30rem"}>
         <Typography
           variant="p"
           fontWeight={"500"}

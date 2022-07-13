@@ -28,10 +28,6 @@ const Home = () => {
             <div className={classes.rightTopDots}>
               <DotsDesign variant="BLUE" />
             </div>
-            <div className={classes.leftBottomDots}>
-              <DotsDesign variant="YELLOW" />
-            </div>
-
             <Avatar
               variant={"rounded"}
               alt="The image"
@@ -43,6 +39,10 @@ const Home = () => {
                 zIndex: "0",
               }}
             />
+
+            <div className={classes.leftBottomDots}>
+              <DotsDesign variant="YELLOW" />
+            </div>
           </Box>
         </Container>
       </Box>
@@ -51,10 +51,7 @@ const Home = () => {
 
       <Services />
 
-
-      <Box height={"2000px"}>
-
-      </Box>
+      <Box height={"2000px"}></Box>
     </>
   );
 };
