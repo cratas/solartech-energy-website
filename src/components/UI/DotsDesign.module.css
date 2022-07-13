@@ -1,0 +1,12 @@
+.mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dotDiv {
+    width: 7px;
+    height: 7px;
+    margin: 5px;
+    border-radius: 100%;
+}

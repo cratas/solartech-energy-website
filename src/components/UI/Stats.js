@@ -27,16 +27,16 @@ export const Stats = () => {
       <Container>
         <Grid container>
           <Grid item xs={3}>
-            <Item mainText="100 +" title="Spokojených zákazníků" />
+            <Item mainText="100 +" title="SPOKOJENÝCH ZÁKAZNÍKŮ" />
           </Grid>
           <Grid item xs={3}>
-            <Item mainText="2 +" title="Let zkušeností" />
+            <Item mainText="2 +" title="LET ZKUŠENOSTÍ" />
           </Grid>
           <Grid item xs={3}>
-            <Item mainText="150" title="Vyhotovených projektů" />
+            <Item mainText="150" title="VYHOTOVENÝCH PROJEKTŮ" />
           </Grid>
           <Grid item xs={3}>
-            <Item mainText="100 %" title="Férovost a spolehlivost" />
+            <Item mainText="100 %" title="FÉROVOST A SPOLEHLIVOST" />
           </Grid>
         </Grid>
       </Container>

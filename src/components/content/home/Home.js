@@ -8,6 +8,7 @@ import { IntroHeader } from "../../UI/IntroHeader";
 import fotovoltaicHouse from "../../../assets/fotovoltaic.jpg";
 
 import { Stats } from "../../UI/Stats";
+import { DotsDesign } from "../../UI/DotsDesign";
 
 const Home = () => {
   return (
@@ -23,8 +24,12 @@ const Home = () => {
       >
         <Container>
           <Box className={classes.imageWrapper}>
-            <div className={classes.rightTopDots}>sdfsd</div>
-            <div className={classes.leftBottomDots}>sdfsd</div>
+            <div className={classes.rightTopDots}>
+              <DotsDesign variant="BLUE" />
+            </div>
+            <div className={classes.leftBottomDots}>
+              <DotsDesign variant="YELLOW" />
+            </div>
 
             <Avatar
               variant={"rounded"}
