@@ -1,24 +1,22 @@
 import React from "react";
 import classes from "./UICommon.module.css";
+import { Box } from "@mui/system";
+import { Avatar, Typography } from "@mui/material";
 
-export const ServiceCard = (props) => {
-  const serviceCardStyle = props.leftAlligned
-    ? `${classes.serviceCard}`
-    : `${classes.serviceCard} ${classes.serviceCardReversed}`;
-
-  const textWrapperStyle = props.leftAlligned
-    ? `${classes.textWrapper}`
-    : `${classes.textWrapper} ${classes.textWrapperReversed}`;
-
+export const ServiceCard = ({ text, title, image }) => {
   return (
-    <div className={serviceCardStyle} data-aos="zoom-in">
-      <div className={classes.imageWrapper}><img src={props.image} alt="img" /></div>
-      <div className={textWrapperStyle}>
-        <h3>{props.title}</h3>
-        <p>
-          {props.text}
-        </p>
-      </div>
-    </div>
+    <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" textAlign="center" className={classes.serviceCard}>
+      <Avatar
+        variant={"rounded"}
+        alt="The image"
+        src={image}
+        style={{
+          width: "6rem",
+          height: "100%",
+        }}
+      />
+      <Typography pt={1} pb={2} variant="h6" style={{fontWeight: "bold", color: "var(--color-blue)"}} >{title}</Typography>
+      <Typography variant="p" style={{fontWeight: "500", color: "var(--color-blue)", maxWidth: "15rem", lineHeight: "1.2rem"}}>{text}</Typography>
+    </Box>
   );
 };

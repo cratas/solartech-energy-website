@@ -11,8 +11,8 @@ export const IntroHeader = () => {
     <Box textAlign="center" pt={5}>
       <Typography
         variant="h1"
-        fontWeight={"bold"}
         color={"var(--color-blue)"}
+        style={{fontWeight: "bold"}}
       >
         Šetříme Vaše
         <br />

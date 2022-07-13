@@ -9,6 +9,7 @@ import fotovoltaicHouse from "../../../assets/fotovoltaic.jpg";
 
 import { Stats } from "../../UI/Stats";
 import { DotsDesign } from "../../UI/DotsDesign";
+import { Services } from "../../UI/Services";
 
 const Home = () => {
   return (
@@ -48,7 +49,12 @@ const Home = () => {
 
       <Stats />
 
-      <Box style={{ height: "2000px" }}></Box>
+      <Services />
+
+
+      <Box height={"2000px"}>
+
+      </Box>
     </>
   );
 };

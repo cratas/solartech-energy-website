@@ -23,7 +23,7 @@ const Item = ({ mainText, title }) => {
 
 export const Stats = () => {
   return (
-    <Box backgroundColor="var(--color-blue)" pt={5} pb={5}>
+    <Box backgroundColor="var(--color-blue)" pt={6} pb={6}>
       <Container>
         <Grid container>
           <Grid item xs={3}>
