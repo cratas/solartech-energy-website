@@ -4,6 +4,10 @@ import { Heading } from "./Heading";
 import { Grid } from "@mui/material";
 import { ClientCard } from "./ClientCard";
 
+import menImageFirst from "../../assets/man-1.png";
+import menImageSecond from "../../assets/man-2.png";
+import womanImage from "../../assets/woman-1.png";
+
 
 export const References = () => {
   return (
@@ -16,21 +20,15 @@ export const References = () => {
         titleColor="var(--color-dark-blue)"
       />
 
-      <Grid container pb={6} spacing={5}>
+      <Grid container pb={6} spacing={4}>
         <Grid item xs={12} md={4}>
-          <ClientCard
-
-          />
+          <ClientCard image={menImageFirst} name="Kamil Kadur" city="Krmelín"/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <ClientCard
-
-          />
+          <ClientCard image={menImageSecond} name="Jiří Palla" city="Příbor" isMiddle={true}/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <ClientCard
-
-          />
+          <ClientCard image={womanImage} name="Vlasta Brdová" city="Šumperk"/>
         </Grid>
       </Grid>
     </Container>
