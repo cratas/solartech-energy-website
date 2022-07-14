@@ -12,6 +12,7 @@ import { DotsDesign } from "../../UI/DotsDesign";
 import { Services } from "../../UI/Services";
 import { ContactHoneyPot } from "../../UI/ContactHoneyPot";
 import { References } from "../../UI/References";
+import { Workflow } from "../../UI/Workflow";
 
 const Home = () => {
   return (
@@ -53,11 +54,15 @@ const Home = () => {
       <Services />
 
       <ContactHoneyPot />
-      <Box height="800px"></Box>
+
+      <Workflow />
 
       <References />
 
-      <Box height="200px" style={{backgroundColor: "var(--color-dark-blue)"}}></Box>
+      <Box
+        height="200px"
+        style={{ backgroundColor: "var(--color-dark-blue)" }}
+      ></Box>
     </>
   );
 };
