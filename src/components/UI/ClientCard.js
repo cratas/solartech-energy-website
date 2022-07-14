@@ -11,9 +11,9 @@ export const ClientCard = ({ name, feedback, city, image, isMiddle }) => {
       display="flex"
       flexDirection="column"
       borderRadius="0.5rem"
-      mt={isMiddle && 3}
-      backgroundColor={isMiddle && "var(--color-dark-blue)"}
-      boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}
+      mt={isMiddle && {xs:0, md:3}}
+      backgroundColor={isMiddle ? "var(--color-dark-blue)" : "var(--color-pure-white)"}
+      boxShadow={"rgba(0, 0, 0, 0.15) 0px 5px 10px"}
     >
       <FaQuoteLeft color="var(--color-light-blue)" size={20} />
       <Box textAlign="center" p={2}>

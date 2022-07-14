@@ -53,10 +53,11 @@ const Home = () => {
       <Services />
 
       <ContactHoneyPot />
+      <Box height="800px"></Box>
 
       <References />
 
-      <Box height="1000px"></Box>
+      <Box height="200px" style={{backgroundColor: "var(--color-dark-blue)"}}></Box>
     </>
   );
 };

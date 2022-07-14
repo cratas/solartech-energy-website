@@ -8,10 +8,10 @@ body {
   /* white colours */
   --color-pure-white: #fff;
   --color-white: #f6f6f6;
+  --color-dark-white: rgb(235, 235, 235);
 
   --color-light-grey: #C6C6C6;
   --color-grey: #727272;
-
 
   /* navy colours */
   --color-light-blue: #067FBA;

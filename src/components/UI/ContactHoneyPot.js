@@ -48,7 +48,7 @@ export const ContactHoneyPot = () => {
           </Typography>
           <MyButton
             text="Kontakt"
-            style={{ backgroundColor: "var(--color-dark-blue)" }}
+            buttonType="dark"
           />
         </Box>
       </Container>

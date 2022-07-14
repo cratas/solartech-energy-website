@@ -52,12 +52,6 @@ export const IntroHeader = () => {
       <Box textAlign="center" pt={5} pb={5}>
         <MyButton
           text="Zjistit více"
-          style={{
-            backgroundColor: "var(--color-light-blue)",
-            border: "var(--color-blue)",
-            color: "var(--color-pure-white)",
-            boxShadow: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px",
-          }}
         />
       </Box>
     </Container>
