@@ -10,6 +10,8 @@ import fotovoltaicHouse from "../../../assets/fotovoltaic.jpg";
 import { Stats } from "../../UI/Stats";
 import { DotsDesign } from "../../UI/DotsDesign";
 import { Services } from "../../UI/Services";
+import { ContactHoneyPot } from "../../UI/ContactHoneyPot";
+import { References } from "../../UI/References";
 
 const Home = () => {
   return (
@@ -20,13 +22,16 @@ const Home = () => {
       <Box
         style={{
           background:
-            "linear-gradient(0deg, var(--color-blue) 50%, var(--color-white) 50%)",
+            "linear-gradient(0deg, var(--color-dark-blue) 50%, var(--color-white) 50%)",
         }}
       >
         <Container>
           <Box className={classes.imageWrapper}>
             <div className={classes.rightTopDots}>
               <DotsDesign variant="BLUE" />
+            </div>
+            <div className={classes.leftBottomDots}>
+              <DotsDesign variant="YELLOW" />
             </div>
             <Avatar
               variant={"rounded"}
@@ -39,10 +44,6 @@ const Home = () => {
                 zIndex: "0",
               }}
             />
-
-            <div className={classes.leftBottomDots}>
-              <DotsDesign variant="YELLOW" />
-            </div>
           </Box>
         </Container>
       </Box>
@@ -51,7 +52,11 @@ const Home = () => {
 
       <Services />
 
-      <Box height={"2000px"}></Box>
+      <ContactHoneyPot />
+
+      <References />
+
+      <Box height="1000px"></Box>
     </>
   );
 };

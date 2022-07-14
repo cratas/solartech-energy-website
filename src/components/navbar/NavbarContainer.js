@@ -55,11 +55,11 @@ const NavbarContainer = () => {
   const servicesClasses =
     activeLink === "services" ? activeStyle : nonActiveStyle;
 
-  // const navbarScrollingStyle = isOnTop
-  //   ? classes.navbarContainer
-  //   : `${classes.navbarContainer} ${classes.scrolled}`;
+  const navbarScrollingStyle = isOnTop
+    ? classes.navbarContainer
+    : `${classes.navbarContainer} ${classes.scrolled}`;
 
-  const navbarScrollingStyle = `${classes.navbarContainer} ${classes.scrolled}`;
+  // const navbarScrollingStyle = `${classes.navbarContainer} ${classes.scrolled}`;
 
   return (
     <>

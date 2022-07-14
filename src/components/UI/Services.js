@@ -9,39 +9,18 @@ import MyButton from "./MyButton";
 import chargingImage from "../../assets/charging.png";
 import solarPanelImage from "../../assets/solar-panel.png";
 import electricGeneratorImage from "../../assets/electric-generator.png";
+import { Heading } from "./Heading";
 
 export const Services = () => {
   return (
     <Container>
-      <Box
-        display="flex"
-        width="100%"
-        alignItems="center"
-        flexDirection="column"
-        pt={6}
-        pb={6}
-      >
-        <Typography variant="p" fontWeight="500" color="var(--color-yellow)">
-          O nás
-        </Typography>
-        <Divider
-          style={{
-            width: "25px",
-            opacity: "100%",
-            height: "3px",
-            color: "var(--color-yellow)",
-            borderRadius: "2rem",
-            margin: "5px",
-          }}
-        />
-        <Typography
-          variant="h4"
-          color="var(--color-blue)"
-          style={{ fontWeight: "bold" }}
-        >
-          Jaké služby nabízíme?
-        </Typography>
-      </Box>
+      <Heading
+        miniTitle="O nás"
+        title="Jaké služby nabízíme?"
+        miniTitleColor="var(--color-light-grey)"
+        titleColor="var(--color-dark-blue)"
+        variant="h4"
+      />
 
       <Grid container pb={6} spacing={5}>
         <Grid item xs={12} md={4}>
@@ -71,14 +50,13 @@ export const Services = () => {
         <MyButton
           text="Zjistit více"
           style={{
-            backgroundColor: "var(--color-yellow)",
-            border: "var(--color-yellow)",
-            color: "var(--color-blue)",
+            backgroundColor: "var(--color-light-blue)",
+            border: "var(--color-light-blue)",
+            color: "var(--color-pure-white)",
             boxShadow: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px",
           }}
         />
       </Box>
-
     </Container>
   );
 };

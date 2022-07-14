@@ -8,7 +8,6 @@ import { useLocation } from "react-router-dom";
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 // or
 
-
 var theme = createTheme({
   typography: {
     "fontFamily": `"Roboto", "Helvetica", "Arial", sans-serif`,

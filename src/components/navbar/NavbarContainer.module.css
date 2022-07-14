@@ -1,6 +1,6 @@
 .navbarContainer {
   padding: 0.8rem !important;
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 .navbarContainer.scrolled {
@@ -10,7 +10,7 @@
 .links {
   margin-right: 2rem;
   font-weight: 700;
-  color: var(--color-blue) !important;
+  color: var(--color-light-blue) !important;
   position: relative;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .links.active {
-  color: var(--color-yellow)!important;
+  color: var(--color-dark-blue)!important;
 }
 
 /* .links.active:before {
@@ -54,7 +54,7 @@
 } */
 
 .links:hover {
-  color: var(--color-yellow)!important;
+  color: var(--color-dark-blue)!important;
 }
 
 .logo {
@@ -81,7 +81,7 @@
   width: 100%;
   margin: 0.5rem 0;
   height: 3px;
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-blue);
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
   border-radius: 10rem;
@@ -91,7 +91,7 @@
   width: 70%;
   margin: 0.5rem 0;
   height: 3px;
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-blue);
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
   border-radius: 10rem;

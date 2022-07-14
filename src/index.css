@@ -3,15 +3,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  background-color: var(--color-white);
+
   /* white colours */
-  --color-white: #fff;
-  --color-white-dark: rgb(179, 179, 179);
+  --color-pure-white: #fff;
+  --color-white: #f6f6f6;
+
+  --color-light-grey: #C6C6C6;
+  --color-grey: #727272;
+
 
   /* navy colours */
-  --color-blue: #000629;
-  --color-blue-dark: #000314;
+  --color-light-blue: #067FBA;
+  --color-blue: #056290;
+  --color-dark-blue: #03253A;
 
   /* yellow colours */
-  --color-yellow: #F6AE2D;
+  --color-yellow: #f6ae2d;
 }
-

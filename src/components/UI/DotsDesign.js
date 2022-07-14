@@ -5,8 +5,8 @@ export const DotsDesign = ({ variant }) => {
 
   const colorThemeDot =
     variant === "BLUE"
-      ? { backgroundColor: "var(--color-blue)" }
-      : { backgroundColor: "var(--color-yellow)" };
+      ? { backgroundColor: "var(--color-dark-blue)" }
+      : { backgroundColor: "var(--color-pure-white)" };
 
   const lines = (
     <div className={classes.mainDiv}>
