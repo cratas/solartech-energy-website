@@ -11,3 +11,9 @@
     margin: 5px;
     border-radius: 100%;
 }
+
+@media only screen and (max-width: 615px) {
+    .mainDiv {
+      display: none;
+    }
+  }

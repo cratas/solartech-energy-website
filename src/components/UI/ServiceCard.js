@@ -5,7 +5,14 @@ import { Avatar, Typography } from "@mui/material";
 
 export const ServiceCard = ({ text, title, image }) => {
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" textAlign="center" className={classes.serviceCard}>
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      flexDirection="column"
+      textAlign="center"
+      className={classes.serviceCard}
+    >
       <Avatar
         variant={"rounded"}
         alt="The image"
@@ -15,8 +22,25 @@ export const ServiceCard = ({ text, title, image }) => {
           height: "100%",
         }}
       />
-      <Typography pt={1} pb={2} variant="h6" style={{fontWeight: "bold", color: "var(--color-dark-blue)"}} >{title}</Typography>
-      <Typography variant="p" style={{fontWeight: "500", color: "var(--color-grey)", maxWidth: "15rem", lineHeight: "1.2rem"}}>{text}</Typography>
+      <Typography
+        pt={1}
+        pb={2}
+        variant="h6"
+        style={{ fontWeight: "bold", color: "var(--color-dark-blue)" }}
+      >
+        {title}
+      </Typography>
+      <Typography
+        variant="p"
+        style={{
+          fontWeight: "500",
+          color: "var(--color-grey)",
+          maxWidth: "15rem",
+          lineHeight: "1.2rem",
+        }}
+      >
+        {text}
+      </Typography>
     </Box>
   );
 };

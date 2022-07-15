@@ -8,7 +8,7 @@ export const IntroHeader = () => {
   return (
     <Container>
       {/* Into text */}
-      <Box textAlign="center" pt={5}>
+      <Box textAlign="center" pt={8}>
         <Typography
           variant="h1"
           color={"var(--color-light-blue)"}
@@ -49,7 +49,7 @@ export const IntroHeader = () => {
         </Box>
       </Box>
 
-      <Box textAlign="center" pt={5} pb={5}>
+      <Box textAlign="center" pt={5} pb={8}>
         <MyButton
           text="Zjistit více"
         />
