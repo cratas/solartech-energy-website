@@ -41,7 +41,7 @@ export const ContactHoneyPot = () => {
             color="var(--color-pure-white)"
             style={{ fontWeight: "bold" }}
             textAlign="center"
-            mb={6}
+            mb={5}
           >
             Kontaktujte nás a připravíme Vám
             <br /> řešení na míru bez starostí
