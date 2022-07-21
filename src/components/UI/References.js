@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Heading } from "./Heading";
 import { Grid, Box } from "@mui/material";
-import { ClientCard } from "./ClientCard";
+import { ClientCard } from "./Cards/ClientCard";
 
 import menImageFirst from "../../assets/man-1.png";
 import menImageSecond from "../../assets/man-2.png";

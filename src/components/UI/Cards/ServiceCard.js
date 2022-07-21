@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./UICommon.module.css";
+import classes from "../UICommon.module.css";
 import { Box } from "@mui/system";
 import { Avatar, Typography } from "@mui/material";
 

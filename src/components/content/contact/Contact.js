@@ -1,12 +1,14 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { Typography } from "@material-ui/core";
+import { ContactInfo } from "../../UI/ContactInfoj";
+import { FormWrapper } from "../../UI/FormWrapper";
 
 const Contact = () => {
   return (
-    <Container style={{height: "1000px"}}>
-     <Typography>Contact</Typography>
-    </Container>
+    <>
+      <ContactInfo />
+
+      <FormWrapper />
+    </>
   );
 };
 
