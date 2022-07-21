@@ -87,8 +87,6 @@ export const FormSection = () => {
     <Container>
       <div className={classes.formSection} data-aos="zoom-in">
         <div className={classes.formWrapper}>
-          <h2>Napište nám!</h2>
-
           <Form className={classes.contactForm} onSubmit={handleFormSubmit}>
             <Form.Group className="mb-3">
               <Form.Control
