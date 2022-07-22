@@ -2,7 +2,7 @@ import { Divider, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
-export const Heading = ({ miniTitle, title, miniTitleColor, titleColor, variant }) => {
+export const Heading = ({ miniTitle, title, miniTitleColor, titleColor, variant, noPadding }) => {
 
   return (
     <Box
@@ -10,8 +10,7 @@ export const Heading = ({ miniTitle, title, miniTitleColor, titleColor, variant 
       width="100%"
       alignItems="center"
       flexDirection="column"
-      pt={6}
-      pb={6}
+      py={!noPadding && 6}
       textAlign="center"
     >
       <Typography variant="p" fontWeight="500" color={miniTitleColor}>

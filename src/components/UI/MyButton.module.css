@@ -38,7 +38,7 @@
 .buttonDark:active,
 .buttonDark:focus {
   box-shadow: none !important;
-  background-color: var(--color-light-blue) !important;
-  border: 2px solid var(--color-light-blue) !important;
+  background-color: var(--color-dark-blue) !important;
+  border: 2px solid var(--color-dark-blue) !important;
   color: var(--color-white);
 }

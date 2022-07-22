@@ -8,10 +8,15 @@ export const FormWrapper = () => {
   return (
     <Box backgroundColor="var(--color-light-blue)" pb={5} mt={3}>
       <Container>
-        <Heading miniTitle="Formulář" title="Kontaktní formulář" miniTitleColor="var(--color-light-grey)" titleColor="var(--color-white)" variant="h5"/>
-      
-      
-      <FormSection />
+        <Heading
+          miniTitle="Formulář"
+          title="Kontaktní formulář"
+          miniTitleColor="var(--color-light-grey)"
+          titleColor="var(--color-white)"
+          variant="h5"
+        />
+
+        <FormSection />
       </Container>
     </Box>
   );

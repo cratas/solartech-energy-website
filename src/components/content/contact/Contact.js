@@ -14,7 +14,7 @@ const Contact = () => {
 
       <FormWrapper />
 
-      {/* <SocialSitesContact /> */}
+      <SocialSitesContact />
 
       <Container>
         <Box mb={7}>
