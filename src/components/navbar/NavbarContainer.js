@@ -2,15 +2,19 @@ import { useState, React, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Typography } from "@material-ui/core";
+import { useDispatch, useSelector } from "react-redux";
 
 import MyButton from "../UI/MyButton";
 import classes from "./NavbarContainer.module.css";
 import logo from "../../assets/logo.png";
+import { navActions } from "../../redux/navSlice";
 
 const NavbarContainer = () => {
-  const [activeLink, setActiveLink] = useState("home");
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isOnTop, setIsOnTop] = useState(true);
+  // REDUX STORE
+  const dispatch = useDispatch();
+  const linksState = useSelector((state) => state.nav);
 
   // checking if viewport is on the top of the screen
   useEffect(() => {
@@ -22,12 +26,25 @@ const NavbarContainer = () => {
 
   // change section handler
   const handleChangeSectionLink = (linkName) => {
-    setActiveLink(linkName);
+    console.log(linksState);
+    switch (linkName) {
+      case "home":
+        dispatch(navActions.linkHome());
+        break;
+      case "about":
+        dispatch(navActions.linkAbout());
+        break;
+      case "work":
+        dispatch(navActions.linkWork());
+        break;
+      default:
+        break;
+    }
   };
 
   // contact button handler
   const handleButtonClick = (e) => {
-    setActiveLink("contact");
+    dispatch(navActions.linkContact());
   };
 
   // toggle click handler
@@ -49,11 +66,11 @@ const NavbarContainer = () => {
   const activeStyle = `${classes.links} nav-link ${classes.active}`;
 
   // conditional styles for links
-  const homeClasses = activeLink === "home" ? activeStyle : nonActiveStyle;
+  const homeClasses = linksState.home === true ? activeStyle : nonActiveStyle;
   const subsidyClasses =
-    activeLink === "subsidy" ? activeStyle : nonActiveStyle;
+    linksState === "subsidy" ? activeStyle : nonActiveStyle;
   const servicesClasses =
-    activeLink === "services" ? activeStyle : nonActiveStyle;
+    linksState === "services" ? activeStyle : nonActiveStyle;
 
   const navbarScrollingStyle = isOnTop
     ? classes.navbarContainer
@@ -66,7 +83,7 @@ const NavbarContainer = () => {
       <Navbar sticky="top" expand="lg" className={navbarScrollingStyle}>
         <Container>
           <Navbar.Brand>
-            <img src={logo} className={classes.logo} alt="logo"/>
+            <img src={logo} className={classes.logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle
             className={classes.navbarToggle}
@@ -87,7 +104,7 @@ const NavbarContainer = () => {
               >
                 <Typography style={{ fontWeight: "bold" }}>Úvod</Typography>
               </Link>
-        
+
               <Link
                 to="/subsidy"
                 onClick={() => handleChangeSectionLink("subsidy")}

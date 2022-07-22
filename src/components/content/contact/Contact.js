@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ContactInfo } from "../../UI/ContactInfo";
 import { FormWrapper } from "../../UI/FormWrapper";
 import { SocialSitesContact } from "../../UI/SocialSitesContact";
@@ -6,8 +6,16 @@ import { Box } from "@mui/system";
 import { Footer } from "../../UI/Footer";
 import { Container } from "react-bootstrap";
 import { Heading } from "../../UI/Heading";
+import { useDispatch } from "react-redux";
+import { navActions } from "../../../redux/navSlice";
 
 const Contact = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(navActions.linkContact());
+  }, []);
+
   return (
     <>
       <ContactInfo />

@@ -1,16 +1,16 @@
 import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import { Container } from "react-bootstrap";
-import { BsArrowUpSquareFill } from "react-icons/bs";
-import { Avatar } from "@mui/material";
 import logoWhiteImage from "../../assets/logo-white.png";
 import classes from "../navbar/NavbarContainer.module.css";
-import { FaFacebookSquare } from "react-icons/fa";
-import { ImInstagram } from "react-icons/im";
-
+import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import { useDispatch } from "react-redux";
+import { navActions } from "../../redux/navSlice";
 
 export const Footer = () => {
+  const dispatch = useDispatch();
+
   return (
     <Box
       backgroundColor="var(--color-dark-blue)"
@@ -29,30 +29,60 @@ export const Footer = () => {
         </Box>
 
         <Box textAlign="center" mb={4} mt={2}>
-          <Typography
-            variant="p"
-            color="var(--color-white)"
-            style={{ marginRight: "2rem", cursor: "pointer" }}
+          <Link
+            to="/"
+            onClick={() => dispatch(navActions.linkHome())}
+            style={{ textDecoration: "none" }}
           >
-            Úvod
-          </Typography>
-          <Typography
-            variant="p"
-            color="var(--color-white)"
-            style={{ marginRight: "2rem" }}
+            <Typography
+              variant="p"
+              color="var(--color-white)"
+              style={{ marginRight: "2rem", cursor: "pointer" }}
+            >
+              Úvod
+            </Typography>
+          </Link>
+          <Link
+            to="/subsidy"
+            onClick={() => console.log("remaining to do routing in nav")}
+            style={{ textDecoration: "none" }}
           >
-            Dotace
-          </Typography>
-          <Typography
-            variant="p"
-            color="var(--color-white)"
-            style={{ marginRight: "2rem" }}
+            <Typography
+              variant="p"
+              color="var(--color-white)"
+              style={{ marginRight: "2rem" }}
+            >
+              Dotace
+            </Typography>
+          </Link>
+          <Link
+            to="/services"
+            onClick={() => console.log("remaining to do routing in nav")}
+            style={{ textDecoration: "none" }}
           >
-            Služby
-          </Typography>
-          <Typography variant="p" color="var(--color-white)">
-            Kontakt
-          </Typography>
+            <Typography
+              variant="p"
+              color="var(--color-white)"
+              style={{ marginRight: "2rem" }}
+            >
+              Služby
+            </Typography>
+          </Link>
+
+          <Link
+            to="/contact"
+            onClick={() => dispatch(navActions.linkContact())}
+            style={{ textDecoration: "none" }}
+          >
+            <Typography
+              variant="p"
+              color="var(--color-white)"
+              style={{ cursor: "pointer", textDecoration: "none!important" }}
+              textDecoration="none"
+            >
+              Kontakt
+            </Typography>
+          </Link>
         </Box>
 
         <Divider
@@ -64,14 +94,14 @@ export const Footer = () => {
         />
         <Box
           display="flex"
-          flexDirection={{xs: "column", sm: "row"}}
+          flexDirection={{ xs: "column", sm: "row" }}
           justifyContent={"space-between"}
           alignItems="center"
         >
           <Typography variant="p" color="var(--color-light-grey)">
             Copyright © 2022 Blitztech s.r.o.
           </Typography>
-          <Box mt={{xs: "1rem", sm: "0"}}>
+          <Box mt={{ xs: "1rem", sm: "0" }}>
             <SocialIcon
               url="https://instagram.com/in/jaketrent"
               bgColor="var(--color-white)"

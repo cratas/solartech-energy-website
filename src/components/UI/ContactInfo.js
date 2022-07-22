@@ -31,7 +31,7 @@ export const ContactInfo = () => {
       </Box>
 
       <Box>
-        <Grid container pb={6} mt={3} spacing={5}>
+        <Grid container pb={{xs: 3, sm: 5}} mt={{xs: 2, sm: 2, md: 0, xl: 0}} spacing={{xs: 2, sm: 2, md: 5, xl: 5}}>
           <Grid item xs={12} md={4}>
             <ContactInfoCard
               icon={<MdLocationPin size={30} color={iconColor} />}
