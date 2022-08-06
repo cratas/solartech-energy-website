@@ -37,7 +37,7 @@ export const ServicesIntroHeader = () => {
             <DotsDesign variant={DOTS_COLOURS.dark_blue} />
           </div>
           <div className={classes.leftBottomDots}>
-            <DotsDesign variant={DOTS_COLOURS.light_blue} />
+            <DotsDesign variant={DOTS_COLOURS.medium_blue} />
           </div>
           <Box width="50%">
             <Avatar
