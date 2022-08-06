@@ -2,11 +2,7 @@ import React from "react";
 import classes from "./DotsDesign.module.css";
 
 export const DotsDesign = ({ variant }) => {
-
-  const colorThemeDot =
-    variant === "BLUE"
-      ? { backgroundColor: "var(--color-dark-blue)" }
-      : { backgroundColor: "var(--color-pure-white)" };
+  const colorThemeDot = { backgroundColor: variant };
 
   const lines = (
     <div className={classes.mainDiv}>

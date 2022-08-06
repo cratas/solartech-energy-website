@@ -4,6 +4,7 @@ import { Avatar } from "@mui/material";
 import { Box } from "@material-ui/core";
 import fotovoltaicHouse from "../../assets/fotovoltaic.jpg";
 import { DotsDesign } from "./DotsDesign";
+import DOTS_COLOURS from "../../constants/constants";
 
 export const IntroImage = () => {
   return (
@@ -16,10 +17,10 @@ export const IntroImage = () => {
       <Container>
         <Box className={classes.imageWrapper}>
           <div className={classes.rightTopDots}>
-            <DotsDesign variant="BLUE" />
+            <DotsDesign variant={DOTS_COLOURS.dark_blue} />
           </div>
           <div className={classes.leftBottomDots}>
-            <DotsDesign variant="YELLOW" />
+            <DotsDesign variant={DOTS_COLOURS.white} />
           </div>
           <Avatar
             variant={"rounded"}
