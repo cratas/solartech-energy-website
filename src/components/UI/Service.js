@@ -9,10 +9,10 @@ export const Service = ({ title, text, leftAligned, image }) => {
       width="100%"
       display="flex"
       marginBottom={5}
-      flexDirection={leftAligned && "row-reverse"}
+      flexDirection={{ xs: "column", md: leftAligned ? "row-reverse" : "row" }}
       pt={2}
     >
-      <Box width="50%" px={1.5}>
+      <Box width={{ xs: "100%", md: "50%" }}>
         <Avatar
           variant={"rounded"}
           alt="The image"
@@ -28,12 +28,18 @@ export const Service = ({ title, text, leftAligned, image }) => {
         />
       </Box>
       <Box
-        width="50%"
+        width={{ xs: "100%", md: "50%" }}
         display="flex"
         justifyContent="center"
         flexDirection="column"
-        alignItems={leftAligned ? "flex-end" : "flex-start"}
-        textAlign={leftAligned ? "right" : "left"}
+        textAlign={{
+          xs: "center",
+          md: leftAligned ? "right" : "left",
+        }}
+        alignItems={{
+          xs: "center",
+          md: leftAligned ? "flex-end" : "flex-start",
+        }}
         p={1.5}
       >
         <Typography variant="h4" fontWeight={"bold"} color="var(--color-white)">
