@@ -32,7 +32,7 @@ export const ServicesIntroHeader = () => {
           titleColor="var(--color-dark-blue)"
           variant="h3"
         />
-        <Box display="flex" className={classes.imageWrapper}>
+        <Box display="flex" className={classes.imageWrapper} data-aos="zoom-in">
           <div className={classes.rightTopDots}>
             <DotsDesign variant={DOTS_COLOURS.dark_blue} />
           </div>

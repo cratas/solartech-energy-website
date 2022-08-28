@@ -41,7 +41,7 @@ export const Step = ({ isLeftAligned, number, title, text }) => {
   );
 
   return (
-    <>
+    <Box data-aos="fade-up">
       <Box display="flex">
         {isLeftAligned ? titleBox : numberBox}
 
@@ -86,6 +86,6 @@ export const Step = ({ isLeftAligned, number, title, text }) => {
           {!isLeftAligned && textBox}
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };

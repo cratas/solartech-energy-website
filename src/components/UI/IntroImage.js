@@ -15,7 +15,7 @@ export const IntroImage = () => {
       }}
     >
       <Container>
-        <Box className={classes.imageWrapper}>
+        <Box className={classes.imageWrapper} data-aos="zoom-in">
           <div className={classes.rightTopDots}>
             <DotsDesign variant={DOTS_COLOURS.dark_blue} />
           </div>

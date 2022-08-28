@@ -10,8 +10,13 @@ import chargingImage from "../../assets/charging.png";
 import solarPanelImage from "../../assets/solar-panel.png";
 import electricGeneratorImage from "../../assets/electric-generator.png";
 import { Heading } from "./Heading";
+import { Link } from "react-router-dom";
+import { navActions } from "../../redux/navSlice";
+import { useDispatch } from "react-redux";
 
 export const Services = () => {
+  const dispatch = useDispatch();
+
   return (
     <Container>
       <Heading
@@ -22,7 +27,7 @@ export const Services = () => {
         variant="h4"
       />
 
-      <Grid container pb={6} spacing={5}>
+      <Grid container pb={6} spacing={5} data-aos="fade-up">
         <Grid item xs={12} md={4}>
           <ServiceCard
             text="Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vyřesíme za Vás. Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vyřesíme za Vás."
@@ -30,14 +35,14 @@ export const Services = () => {
             image={solarPanelImage}
           />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="50">
           <ServiceCard
             text="Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vyřesíme za Vás. Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vás."
             title="Nabíjecí stanice"
             image={chargingImage}
           />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="100">
           <ServiceCard
             text="Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vyřesíme za Vás. Nabízíme kompletní řešení fotoektrárny. Vše vyřesíme za Vás."
             title="Full Back Up"
@@ -46,10 +51,13 @@ export const Services = () => {
         </Grid>
       </Grid>
 
-      <Box textAlign="center">
-        <MyButton
-          text="Zjistit více"
-        />
+      <Box textAlign="center" data-aos="fade-in" data-aos-delay="150">
+        <Link to="/services">
+          <MyButton
+            text="Zjistit více"
+            onClick={() => dispatch(navActions.linkServices())}
+          />
+        </Link>
       </Box>
     </Container>
   );

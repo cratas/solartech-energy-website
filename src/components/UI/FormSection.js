@@ -150,7 +150,7 @@ export const FormSection = () => {
             )}
           </Form.Group>
 
-          <Form.Group className="mb-3 mt-5">
+          <Form.Group className="mb-3 mt-5" data-aos="fade-in">
             <MyButton text="Kontakt" buttonType="dark" />
           </Form.Group>
           {isEmailSentMessageVisibile && (

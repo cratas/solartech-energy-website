@@ -6,7 +6,7 @@ import FormSection from "./FormSection";
 
 export const FormWrapper = () => {
   return (
-    <Box backgroundColor="var(--color-light-blue)" pb={5} mt={3}>
+    <Box backgroundColor="var(--color-light-blue)" pb={5} mt={3} data-aos="fade-right" >
       <Container>
         <Heading
           miniTitle="Formulář"

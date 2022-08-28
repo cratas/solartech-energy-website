@@ -8,7 +8,7 @@ import MyButton from "./MyButton";
 
 export const ContactHoneyPot = () => {
   return (
-    <Box backgroundColor={"var(--color-light-blue)"} mt={6}>
+    <Box backgroundColor={"var(--color-light-blue)"} mt={6} data-aos="fade-right" data-aos-delay="50">
       <Container>
         <Box
           display="flex"

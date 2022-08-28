@@ -20,7 +20,7 @@ export const References = () => {
           titleColor="var(--color-dark-blue)"
         />
 
-        <Grid container pb={6} spacing={4}>
+        <Grid container pb={6} spacing={4} data-aos="fade-up">
           <Grid item xs={12} md={4}>
             <ClientCard
               image={menImageFirst}
@@ -28,7 +28,7 @@ export const References = () => {
               city="Krmelín"
             />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="50">
             <ClientCard
               image={menImageSecond}
               name="Jiří Palla"
@@ -36,7 +36,7 @@ export const References = () => {
               isMiddle={true}
             />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="150">
             <ClientCard
               image={womanImage}
               name="Vlasta Brdová"

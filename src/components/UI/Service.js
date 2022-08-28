@@ -2,8 +2,13 @@ import { Box } from "@mui/material";
 import React from "react";
 import { Avatar, Typography } from "@mui/material";
 import MyButton from "./MyButton";
+import { useDispatch } from "react-redux";
+import { navActions } from "../../redux/navSlice";
+import { Link } from "react-router-dom";
 
 export const Service = ({ title, text, leftAligned, image }) => {
+  const dispatch = useDispatch();
+
   return (
     <Box
       width="100%"
@@ -11,6 +16,7 @@ export const Service = ({ title, text, leftAligned, image }) => {
       marginBottom={5}
       flexDirection={{ xs: "column", md: leftAligned ? "row-reverse" : "row" }}
       pt={2}
+      data-aos={leftAligned ? "fade-right" : "fade-left"}
     >
       <Box width={{ xs: "100%", md: "50%" }}>
         <Avatar
@@ -51,7 +57,12 @@ export const Service = ({ title, text, leftAligned, image }) => {
           </Typography>
         </Box>
         <Box mt={4}>
-          <MyButton text="Sjednat" />
+          <Link to="/contact">
+            <MyButton
+              text="Sjednat"
+              onClick={() => dispatch(navActions.linkContact())}
+            />
+          </Link>
         </Box>
       </Box>
     </Box>

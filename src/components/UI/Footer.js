@@ -19,7 +19,7 @@ export const Footer = () => {
       pb={7}
     >
       <Container>
-        <Box width="100%" textAlign="center">
+        <Box width="100%" textAlign="center" mb={4}>
           <img
             src={logoWhiteImage}
             className={classes.logo}
@@ -28,7 +28,7 @@ export const Footer = () => {
           />
         </Box>
 
-        <Box textAlign="center" mb={4} mt={2}>
+        <Box textAlign="center" mb={3} mt={2}>
           <Link
             to="/"
             onClick={() => dispatch(navActions.linkHome())}

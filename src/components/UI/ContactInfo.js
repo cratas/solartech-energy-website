@@ -23,7 +23,7 @@ export const ContactInfo = () => {
         titleColor="var(--color-dark-blue)"
         variant="h2"
       />
-      <Box textAlign="center" mt={-5}>
+      <Box textAlign="center" mt={-5} data-aos="fade-up">
         <Typography variant="p" fontWeight={"500"} color="var(--color-grey)">
           Máte-li jakýkoliv dotaz či problém, můžete nás
           <br /> kontaktovat několika způsoby.
@@ -32,19 +32,19 @@ export const ContactInfo = () => {
 
       <Box>
         <Grid container pb={{xs: 3, sm: 5}} mt={{xs: 2, sm: 2, md: 0, xl: 0}} spacing={{xs: 2, sm: 2, md: 5, xl: 5}}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} data-aos="fade-in" data-aos-delay="300">
             <ContactInfoCard
               icon={<MdLocationPin size={30} color={iconColor} />}
               text="Bernartice nad Odrou"
             />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} data-aos="fade-in" data-aos-delay="350">
             <ContactInfoCard
               icon={<AiFillPhone size={30} color={iconColor} />}
               text="+420 662 212 222"
             />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} data-aos="fade-in" data-aos-delay="400">
             <ContactInfoCard
               icon={<IoMdMail size={30} color={iconColor} />}
               text="blitztech@info.com"

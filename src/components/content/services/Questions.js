@@ -26,7 +26,7 @@ export const Questions = () => {
   };
 
   return (
-    <Box style={{ backgroundColor: "var(--color-pure-white)" }} pb={6}>
+    <Box style={{ backgroundColor: "var(--color-pure-white)" }} pb={6} data-aos="fade-up">
       <Container>
         <Heading
           miniTitle="Dotazy"

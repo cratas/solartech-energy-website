@@ -50,6 +50,7 @@ const Contact = () => {
               boxShadow: "rgba(0, 0, 0, 0.09) 0px 3px 12px",
             }}
             position="relative"
+            data-aos="fade-up"
           />
         </Box>
       </Container>

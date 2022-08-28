@@ -8,7 +8,7 @@ export const IntroHeader = () => {
   return (
     <Container>
       {/* Into text */}
-      <Box textAlign="center" pt={8}>
+      <Box textAlign="center" pt={8} data-aos="fade-up">
         <Typography
           variant="h1"
           color={"var(--color-light-blue)"}
@@ -21,7 +21,7 @@ export const IntroHeader = () => {
         </Typography>
       </Box>
 
-      <Box display="flex" justifyContent="center">
+      <Box display="flex" justifyContent="center" data-aos="fade-up" data-aos-delay="50">
         <Divider
           style={{
             width: "10%",
@@ -35,7 +35,7 @@ export const IntroHeader = () => {
         />
       </Box>
 
-      <Box textAlign="center" pt={2} display={"flex"} justifyContent={"center"}>
+      <Box textAlign="center" pt={2} display={"flex"} justifyContent={"center"} data-aos="fade-up" data-aos-delay="100">
         <Box maxWidth={"30rem"}>
           <Typography
             variant="p"
@@ -49,7 +49,7 @@ export const IntroHeader = () => {
         </Box>
       </Box>
 
-      <Box textAlign="center" pt={5} pb={8}>
+      <Box textAlign="center" pt={5} pb={8} data-aos="fade-in" data-aos-delay="350">
         <MyButton
           text="Zjistit více"
         />
