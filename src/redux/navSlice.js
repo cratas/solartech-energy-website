@@ -1,41 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { NAVIGATION } from "../constants/constants";
 
 const initialNavState = {
-    home: true,
-    about: false,
-    work: false,
-    contact: false,
-  };
+  currentPage: NAVIGATION.home,
+};
 
 const navSlice = createSlice({
-    name: 'nav',
-    initialState: initialNavState,
-    reducers: {
-        linkHome(state) {
-            state.home = true;
-            state.about = false;
-            state.work = false;
-            state.contact = false;
-        }, 
-        linkAbout(state) {
-            state.home = false;
-            state.about = true;
-            state.work = false;
-            state.contact = false;
-        }, 
-        linkWork(state) {
-            state.home = false;
-            state.about = false;
-            state.work = true;
-            state.contact = false;
-        }, 
-        linkContact(state) {
-            state.home = false;
-            state.about = false;
-            state.work = false;
-            state.contact = true;
-        },
+  name: "nav",
+  initialState: initialNavState,
+  reducers: {
+    linkHome(state) {
+      state.currentPage = NAVIGATION.home;
     },
+    linkServices(state) {
+      state.currentPage =  NAVIGATION.services;
+    },
+    linkContact(state) {
+      state.currentPage = NAVIGATION.contact;
+    },
+  },
 });
 
 export const navActions = navSlice.actions;

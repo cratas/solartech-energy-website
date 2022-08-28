@@ -57,7 +57,7 @@ export const Footer = () => {
           </Link>
           <Link
             to="/services"
-            onClick={() => console.log("remaining to do routing in nav")}
+            onClick={() => dispatch(navActions.linkServices())}
             style={{ textDecoration: "none" }}
           >
             <Typography
