@@ -1,8 +1,8 @@
 import React from "react";
+import { Divider } from "@material-ui/core";
 import { Box } from "@mui/system";
 import { Container } from "react-bootstrap";
 import {  Typography } from "@mui/material";
-import { Divider } from "@material-ui/core";
 import MyButton from "./MyButton";
 
 
