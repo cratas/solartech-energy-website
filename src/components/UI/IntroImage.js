@@ -4,7 +4,7 @@ import { Avatar } from "@mui/material";
 import { Box } from "@material-ui/core";
 import fotovoltaicHouse from "../../assets/fotovoltaic.jpg";
 import { DotsDesign } from "./DotsDesign";
-import DOTS_COLOURS from "../../constants/constants";
+import { DOTS_COLOURS } from "../../constants/constants";
 
 export const IntroImage = () => {
   return (

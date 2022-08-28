@@ -4,7 +4,7 @@ import { Heading } from "./Heading";
 import familyService from "../../assets/family.jpg";
 import companyService from "../../assets/company.jpg";
 import classes from "../content/home/Home.module.css";
-import DOTS_COLOURS from "../../constants/constants";
+import { DOTS_COLOURS } from "../../constants/constants";
 
 import { Avatar } from "@mui/material";
 import { Container } from "react-bootstrap";

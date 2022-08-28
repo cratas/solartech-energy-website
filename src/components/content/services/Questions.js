@@ -15,6 +15,16 @@ export const Questions = () => {
     setExpanded(isExpanded ? panel : false);
   };
 
+  const AccordionStyle = {
+    marginTop: "0.3rem",
+    padding: "0.7rem",
+    border: "none",
+    boxShadow: "none",
+    "&:before": {
+      backgroundColor: "transparent !important",
+    },
+  };
+
   return (
     <Box style={{ backgroundColor: "var(--color-pure-white)" }} pb={6}>
       <Container>
@@ -29,9 +39,8 @@ export const Questions = () => {
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
+          sx={AccordionStyle}
           style={{
-            border: "none",
-            boxShadow: "none",
             backgroundColor:
               expanded === "panel1"
                 ? "var(--color-dark-blue)"
@@ -39,18 +48,24 @@ export const Questions = () => {
           }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={
+              <ExpandMoreIcon
+                fontSize="large"
+                style={{
+                  color:
+                    expanded === "panel1"
+                      ? "var(--color-white)"
+                      : "var(--color-dark-blue)",
+                }}
+              />
+            }
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
             <Typography
               variant="h5"
               style={{ fontWeight: "bold" }}
-              color={
-                expanded === "panel1"
-                  ? "var(--color-white)"
-                  : "var(--color-dark-blue)"
-              }
+              color="var(--color-light-grey)"
               width="5%"
             >
               01
@@ -82,24 +97,60 @@ export const Questions = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion
+          sx={AccordionStyle}
           expanded={expanded === "panel2"}
           onChange={handleChange("panel2")}
           style={{
-            border: "none",
-            backgroundColor: "var(--color-white)",
-            boxShadow: "none",
+            backgroundColor:
+              expanded === "panel2"
+                ? "var(--color-dark-blue)"
+                : "var(--color-white)",
           }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={
+              <ExpandMoreIcon
+                fontSize="large"
+                style={{
+                  color:
+                    expanded === "panel2"
+                      ? "var(--color-white)"
+                      : "var(--color-dark-blue)",
+                }}
+              />
+            }
             aria-controls="panel2bh-content"
             id="panel2bh-header"
           >
-            <Typography>02</Typography>
-            <Typography>You are currently not an owner</Typography>
+            <Typography
+              variant="h5"
+              style={{ fontWeight: "bold" }}
+              color="var(--color-light-grey)"
+              width="5%"
+            >
+              02
+            </Typography>
+            <Typography
+              variant="h6"
+              style={{ fontWeight: "bold" }}
+              color={
+                expanded === "panel2"
+                  ? "var(--color-white)"
+                  : "var(--color-dark-blue)"
+              }
+            >
+              You are currently not an owner
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography
+              color={
+                expanded === "panel2"
+                  ? "var(--color-light-grey)"
+                  : "var(--color-dark-blue)"
+              }
+              pl={"5%"}
+            >
               Donec placerat, lectus sed mattis semper, neque lectus feugiat
               lectus, varius pulvinar diam eros in elit. Pellentesque convallis
               laoreet laoreet.
@@ -107,26 +158,120 @@ export const Questions = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion
+          sx={AccordionStyle}
           expanded={expanded === "panel3"}
           onChange={handleChange("panel3")}
           style={{
-            border: "none",
-            backgroundColor: "var(--color-white)",
-            boxShadow: "none",
+            backgroundColor:
+              expanded === "panel3"
+                ? "var(--color-dark-blue)"
+                : "var(--color-white)",
           }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={
+              <ExpandMoreIcon
+                fontSize="large"
+                style={{
+                  color:
+                    expanded === "panel3"
+                      ? "var(--color-white)"
+                      : "var(--color-dark-blue)",
+                }}
+              />
+            }
             aria-controls="panel3bh-content"
             id="panel3bh-header"
           >
-            <Typography>03</Typography>
-            <Typography>
+            <Typography
+              variant="h5"
+              style={{ fontWeight: "bold" }}
+              color="var(--color-light-grey)"
+              width="5%"
+            >
+              03
+            </Typography>
+            <Typography
+              variant="h6"
+              style={{ fontWeight: "bold" }}
+              color={
+                expanded === "panel3"
+                  ? "var(--color-white)"
+                  : "var(--color-dark-blue)"
+              }
+            >
               Filtering has been entirely disabled for whole web server
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography
+              color={
+                expanded === "panel3"
+                  ? "var(--color-light-grey)"
+                  : "var(--color-dark-blue)"
+              }
+              pl={"5%"}
+            >
+              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
+              sit amet egestas eros, vitae egestas augue. Duis vel est augue.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === "panel4"}
+          onChange={handleChange("panel4")}
+          sx={AccordionStyle}
+          style={{
+            backgroundColor:
+              expanded === "panel4"
+                ? "var(--color-dark-blue)"
+                : "var(--color-white)",
+          }}
+        >
+          <AccordionSummary
+            expandIcon={
+              <ExpandMoreIcon
+                fontSize="large"
+                style={{
+                  color:
+                    expanded === "panel4"
+                      ? "var(--color-white)"
+                      : "var(--color-dark-blue)",
+                }}
+              />
+            }
+            aria-controls="panel4bh-content"
+            id="panel3bh-header"
+          >
+            <Typography
+              variant="h5"
+              style={{ fontWeight: "bold" }}
+              color="var(--color-light-grey)"
+              width="5%"
+            >
+              04
+            </Typography>
+            <Typography
+              variant="h6"
+              style={{ fontWeight: "bold" }}
+              color={
+                expanded === "panel4"
+                  ? "var(--color-white)"
+                  : "var(--color-dark-blue)"
+              }
+            >
+              Filtering has been entirely disabled for whole web server
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography
+              color={
+                expanded === "panel4"
+                  ? "var(--color-light-grey)"
+                  : "var(--color-dark-blue)"
+              }
+              pl={"5%"}
+            >
               Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
               sit amet egestas eros, vitae egestas augue. Duis vel est augue.
             </Typography>
