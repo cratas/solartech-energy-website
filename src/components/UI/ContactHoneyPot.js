@@ -2,13 +2,21 @@ import React from "react";
 import { Divider } from "@material-ui/core";
 import { Box } from "@mui/system";
 import { Container } from "react-bootstrap";
-import {  Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import MyButton from "./MyButton";
-
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { navActions } from "../../redux/navSlice";
 
 export const ContactHoneyPot = () => {
+  const dispatch = useDispatch();
   return (
-    <Box backgroundColor={"var(--color-light-blue)"} mt={6} data-aos="fade-right" data-aos-delay="50">
+    <Box
+      backgroundColor={"var(--color-light-blue)"}
+      mt={6}
+      data-aos="fade-right"
+      data-aos-delay="50"
+    >
       <Container>
         <Box
           display="flex"
@@ -46,10 +54,13 @@ export const ContactHoneyPot = () => {
             Kontaktujte nás a připravíme Vám
             <br /> řešení na míru bez starostí
           </Typography>
-          <MyButton
-            text="Kontakt"
-            buttonType="dark"
-          />
+          <Link to="/contact">
+            <MyButton
+              text="Kontakt"
+              buttonType="dark"
+              onButtonClick={() => dispatch(navActions.linkContact())}
+            />
+          </Link>
         </Box>
       </Container>
     </Box>

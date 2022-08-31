@@ -5,10 +5,14 @@ import StatComponent from "./StatComponent";
 
 export const Stats = () => {
   return (
-    <Box backgroundColor="var(--color-dark-blue)" pt={6} pb={6} >
+    <Box
+      backgroundColor="var(--color-dark-blue)"
+      pt={6}
+      pb={6}
+    >
       <Container>
         <Grid container>
-          <Grid item xs={6} md={3} data-aos="fade-in" >
+          <Grid item xs={6} md={3} data-aos="fade-in">
             <StatComponent mainText="100 +" title="Spokojených zákazníků" />
           </Grid>
           <Grid item xs={6} md={3} data-aos="fade-in" data-aos-delay="50">

@@ -14,11 +14,11 @@ import { Link } from "react-router-dom";
 import { navActions } from "../../redux/navSlice";
 import { useDispatch } from "react-redux";
 
-export const Services = () => {
+export const Services = ({ scrollingRef }) => {
   const dispatch = useDispatch();
 
   return (
-    <Container>
+    <Container ref={scrollingRef} style={{ scrollMarginTop: "4rem" }}>
       <Heading
         miniTitle="O nás"
         title="Jaké služby nabízíme?"

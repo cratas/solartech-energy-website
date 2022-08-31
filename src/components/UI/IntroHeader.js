@@ -4,7 +4,11 @@ import { Box } from "@mui/system";
 import { Typography, Divider } from "@mui/material";
 import MyButton from "./MyButton";
 
-export const IntroHeader = () => {
+export const IntroHeader = ({ scrollingRef }) => {
+  const handeFindOutMoreButton = () => {
+    scrollingRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Container>
       {/* Into text */}
@@ -16,12 +20,19 @@ export const IntroHeader = () => {
         >
           Šetříme <span style={{ color: "var(--color-dark-blue)" }}>Vaše</span>
           <br />
-           
-          <span style={{ color: "var(--color-dark-blue)" }}>peníze za</span> elektřinu
+          <span style={{ color: "var(--color-dark-blue)" }}>
+            peníze za
+          </span>{" "}
+          elektřinu
         </Typography>
       </Box>
 
-      <Box display="flex" justifyContent="center" data-aos="fade-up" data-aos-delay="50">
+      <Box
+        display="flex"
+        justifyContent="center"
+        data-aos="fade-up"
+        data-aos-delay="50"
+      >
         <Divider
           style={{
             width: "10%",
@@ -30,12 +41,19 @@ export const IntroHeader = () => {
             color: "var(--color-light-grey)",
             borderRadius: "2rem",
             margin: "1rem",
-            border: "none"
+            border: "none",
           }}
         />
       </Box>
 
-      <Box textAlign="center" pt={2} display={"flex"} justifyContent={"center"} data-aos="fade-up" data-aos-delay="100">
+      <Box
+        textAlign="center"
+        pt={2}
+        display={"flex"}
+        justifyContent={"center"}
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <Box maxWidth={"30rem"}>
           <Typography
             variant="p"
@@ -49,10 +67,14 @@ export const IntroHeader = () => {
         </Box>
       </Box>
 
-      <Box textAlign="center" pt={5} pb={8} data-aos="fade-in" data-aos-delay="350">
-        <MyButton
-          text="Zjistit více"
-        />
+      <Box
+        textAlign="center"
+        pt={5}
+        pb={8}
+        data-aos="fade-in"
+        data-aos-delay="350"
+      >
+        <MyButton text="Zjistit více" onButtonClick={handeFindOutMoreButton} />
       </Box>
     </Container>
   );

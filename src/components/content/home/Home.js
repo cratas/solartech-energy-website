@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useRef } from "react";
 import { IntroHeader } from "../../UI/IntroHeader";
 import { Stats } from "../../UI/Stats";
 import { Services } from "../../UI/Services";
@@ -9,15 +9,17 @@ import { Footer } from "../../UI/Footer";
 import { IntroImage } from "../../UI/IntroImage";
 
 const Home = () => {
+  const scrollingRef = useRef(null);
+
   return (
     <>
-      <IntroHeader />
+      <IntroHeader scrollingRef={scrollingRef} />
 
       <IntroImage />
 
       <Stats />
 
-      <Services />
+      <Services scrollingRef={scrollingRef} />
 
       <ContactHoneyPot />
 

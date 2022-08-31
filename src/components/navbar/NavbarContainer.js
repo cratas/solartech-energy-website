@@ -84,13 +84,13 @@ const NavbarContainer = () => {
                 <Typography style={{ fontWeight: "bold" }}>Úvod</Typography>
               </Link>
 
-              <Link
+              {/* <Link
                 to="/subsidy"
                 onClick={() => dispatch(navActions.linkHome())}
                 className={subsidyClasses}
               >
                 <Typography style={{ fontWeight: "bold" }}>Dotace</Typography>
-              </Link>
+              </Link> */}
 
               <Link
                 to="/services"

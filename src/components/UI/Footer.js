@@ -42,7 +42,7 @@ export const Footer = () => {
               Úvod
             </Typography>
           </Link>
-          <Link
+          {/* <Link
             to="/subsidy"
             onClick={() => console.log("remaining to do routing in nav")}
             style={{ textDecoration: "none" }}
@@ -54,7 +54,7 @@ export const Footer = () => {
             >
               Dotace
             </Typography>
-          </Link>
+          </Link> */}
           <Link
             to="/services"
             onClick={() => dispatch(navActions.linkServices())}

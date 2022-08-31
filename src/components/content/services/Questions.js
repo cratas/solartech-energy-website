@@ -26,7 +26,11 @@ export const Questions = () => {
   };
 
   return (
-    <Box style={{ backgroundColor: "var(--color-pure-white)" }} pb={6} data-aos="fade-up">
+    <Box
+      style={{ backgroundColor: "var(--color-pure-white)" }}
+      pb={6}
+      data-aos="fade-up"
+    >
       <Container>
         <Heading
           miniTitle="Dotazy"
@@ -67,6 +71,7 @@ export const Questions = () => {
               style={{ fontWeight: "bold" }}
               color="var(--color-light-grey)"
               width="5%"
+              display={{ xs: "none", md: "block" }}
             >
               01
             </Typography>
@@ -127,6 +132,7 @@ export const Questions = () => {
               style={{ fontWeight: "bold" }}
               color="var(--color-light-grey)"
               width="5%"
+              display={{ xs: "none", md: "block" }}
             >
               02
             </Typography>
@@ -188,6 +194,7 @@ export const Questions = () => {
               style={{ fontWeight: "bold" }}
               color="var(--color-light-grey)"
               width="5%"
+              display={{ xs: "none", md: "block" }}
             >
               03
             </Typography>
@@ -248,6 +255,7 @@ export const Questions = () => {
               style={{ fontWeight: "bold" }}
               color="var(--color-light-grey)"
               width="5%"
+              display={{ xs: "none", md: "block" }}
             >
               04
             </Typography>
