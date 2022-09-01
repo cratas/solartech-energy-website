@@ -61,9 +61,17 @@ const NavbarContainer = () => {
     <>
       <Navbar sticky="top" expand="lg" className={navbarScrollingStyle}>
         <Container>
-          <Navbar.Brand>
-            <img src={logo} className={classes.logo} alt="logo"  />
-          </Navbar.Brand>
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              dispatch(navActions.linkHome());
+            }}
+          >
+            <Navbar.Brand style={{ cursor: "pointer" }}>
+              <img src={logo} className={classes.logo} alt="logo" />
+            </Navbar.Brand>
+          </Link>
           <Navbar.Toggle
             className={classes.navbarToggle}
             aria-controls="navbarNavAltMarkup"
