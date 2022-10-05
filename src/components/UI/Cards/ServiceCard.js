@@ -3,7 +3,14 @@ import classes from "../UICommon.module.css";
 import { Box } from "@mui/system";
 import { Avatar, Typography } from "@mui/material";
 
-export const ServiceCard = ({ text, title, image }) => {
+export const ServiceCard = ({
+  text,
+  title,
+  image,
+  titleColor,
+  textColor,
+  customFontWeight,
+}) => {
   return (
     <Box
       display="flex"
@@ -26,15 +33,18 @@ export const ServiceCard = ({ text, title, image }) => {
         pt={1}
         pb={2}
         variant="h6"
-        style={{ fontWeight: "bold", color: "var(--color-dark-blue)" }}
+        style={{
+          fontWeight: "bold",
+          color: titleColor ?? "var(--color-dark-blue)",
+        }}
       >
         {title}
       </Typography>
       <Typography
         variant="p"
         style={{
-          fontWeight: "500",
-          color: "var(--color-grey)",
+          fontWeight: customFontWeight ?? "500",
+          color: textColor ?? "var(--color-grey)",
           maxWidth: "15rem",
           lineHeight: "1.2rem",
         }}

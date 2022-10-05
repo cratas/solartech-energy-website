@@ -1,12 +1,6 @@
 .serviceCard {
   border-radius: 2rem;
-  cursor: pointer;
   padding: 2rem;
-}
-
-.serviceCard:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  border-radius: 0.5rem;
 }
 
 .formInput {

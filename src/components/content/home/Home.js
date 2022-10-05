@@ -1,4 +1,4 @@
-import { React, useRef, useMemo } from "react";
+import { React, useRef, memo } from "react";
 import { IntroHeader } from "../../UI/IntroHeader";
 import { Stats } from "../../UI/Stats";
 import { Services } from "../../UI/Services";
@@ -11,30 +11,25 @@ import { IntroImage } from "../../UI/IntroImage";
 const Home = () => {
   const scrollingRef = useRef(null);
 
-  const elements = useMemo(
-    () => (
-      <>
-        <IntroHeader scrollingRef={scrollingRef} />
+  return (
+    <>
+      <IntroHeader scrollingRef={scrollingRef} />
 
-        <IntroImage />
+      <IntroImage />
 
-        <Stats />
+      <Stats />
 
-        <Services scrollingRef={scrollingRef} />
+      <Services scrollingRef={scrollingRef} />
 
-        <ContactHoneyPot />
+      <ContactHoneyPot />
 
-        <Workflow />
+      <Workflow />
 
-        <References />
+      <References />
 
-        <Footer />
-      </>
-    ),
-    []
+      <Footer />
+    </>
   );
-
-  return elements;
 };
 
-export default Home;
+export default memo(Home);

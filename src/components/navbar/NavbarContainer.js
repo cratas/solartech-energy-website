@@ -46,16 +46,14 @@ const NavbarContainer = () => {
   // conditional styles for links
   const homeClasses =
     linksState === NAVIGATION.home ? activeStyle : nonActiveStyle;
-  const subsidyClasses =
-    linksState === "subsidy" ? activeStyle : nonActiveStyle;
+  const photovoltaicsClasses =
+    linksState === "photovoltaics" ? activeStyle : nonActiveStyle;
   const servicesClasses =
     linksState === NAVIGATION.services ? activeStyle : nonActiveStyle;
 
   const navbarScrollingStyle = isOnTop
     ? classes.navbarContainer
     : `${classes.navbarContainer} ${classes.scrolled}`;
-
-  // const navbarScrollingStyle = `${classes.navbarContainer} ${classes.scrolled}`;
 
   return (
     <>
@@ -92,20 +90,22 @@ const NavbarContainer = () => {
                 <Typography style={{ fontWeight: "bold" }}>Úvod</Typography>
               </Link>
 
-              {/* <Link
-                to="/subsidy"
-                onClick={() => dispatch(navActions.linkHome())}
-                className={subsidyClasses}
-              >
-                <Typography style={{ fontWeight: "bold" }}>Dotace</Typography>
-              </Link> */}
-
               <Link
                 to="/services"
                 className={servicesClasses}
                 onClick={() => dispatch(navActions.linkServices())}
               >
                 <Typography style={{ fontWeight: "bold" }}>Služby</Typography>
+              </Link>
+
+              <Link
+                to="/photovoltaics"
+                onClick={() => dispatch(navActions.linkPhotovoltaics())}
+                className={photovoltaicsClasses}
+              >
+                <Typography style={{ fontWeight: "bold" }}>
+                  Fotovoltaické elektrárny
+                </Typography>
               </Link>
 
               <Link to="/contact">

@@ -9,4 +9,5 @@ export const NAVIGATION = {
   home: "home",
   contact: "contact",
   services: "services",
+  photovoltaics: "photovoltaics"
 };

@@ -28,7 +28,7 @@ export const Footer = () => {
           />
         </Box>
 
-        <Box textAlign="center" mb={3} mt={2}>
+        <Box textAlign="center" mb={3} mt={2} fontWeight="500">
           <Link
             to="/"
             onClick={() => dispatch(navActions.linkHome())}
@@ -42,9 +42,9 @@ export const Footer = () => {
               Úvod
             </Typography>
           </Link>
-          {/* <Link
-            to="/subsidy"
-            onClick={() => console.log("remaining to do routing in nav")}
+          <Link
+            to="/photovoltaics"
+            onClick={() => dispatch(navActions.linkPhotovoltaics())}
             style={{ textDecoration: "none" }}
           >
             <Typography
@@ -52,9 +52,9 @@ export const Footer = () => {
               color="var(--color-white)"
               style={{ marginRight: "2rem" }}
             >
-              Dotace
+              Fotovoltaické elektrárny
             </Typography>
-          </Link> */}
+          </Link>
           <Link
             to="/services"
             onClick={() => dispatch(navActions.linkServices())}

@@ -3,20 +3,27 @@ import { Button } from "react-bootstrap";
 import { Typography } from "@material-ui/core";
 import classes from "./MyButton.module.css";
 
-const MyButton = (props) => {
+const MyButton = ({
+  onButtonClick,
+  customStyle,
+  style,
+  type,
+  text,
+  buttonType,
+}) => {
   const buttonStyle =
-    props.buttonType === "dark"
-      ? `${classes.myButton} ${classes.buttonDark} ${props.customStyle}`
-      : `${classes.myButton} ${props.customStyle}`;
+    buttonType === "dark"
+      ? `${classes.myButton} ${classes.buttonDark} ${customStyle}`
+      : `${classes.myButton} ${customStyle}`;
 
   return (
     <Button
       className={buttonStyle}
-      onClick={props.onButtonClick}
-      style={props.style}
-      type={props.type}
+      onClick={onButtonClick}
+      style={style}
+      type={type}
     >
-      <Typography style={{ fontWeight: "bold" }}>{props.text}</Typography>
+      <Typography style={{ fontWeight: "bold" }}>{text}</Typography>
     </Button>
   );
 };

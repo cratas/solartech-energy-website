@@ -1,24 +1,21 @@
-import React, { useMemo } from "react";
+import React, { memo } from "react";
 import { ServicesIntroHeader } from "../../UI/ServicesIntroHeader";
 import { ServicesList } from "../../UI/ServicesList";
 import { Footer } from "../../UI/Footer";
 import { Questions } from "./Questions";
 
-export const Services = () => {
-  const elements = useMemo(
-    () => (
-      <>
-        <ServicesIntroHeader />
+const Services = () => {
+  return (
+    <>
+      <ServicesIntroHeader />
 
-        <ServicesList />
+      <ServicesList />
 
-        <Questions />
+      <Questions />
 
-        <Footer />
-      </>
-    ),
-    []
+      <Footer />
+    </>
   );
-
-  return elements;
 };
+
+export default memo(Services);

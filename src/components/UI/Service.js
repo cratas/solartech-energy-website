@@ -18,7 +18,7 @@ export const Service = ({ title, text, leftAligned, image }) => {
       pt={2}
       data-aos={leftAligned ? "fade-right" : "fade-left"}
     >
-      <Box width={{ xs: "100%", md: "50%" }}>
+      <Box width={{ xs: "100%", md: "50%" }} p={1.5}>
         <Avatar
           variant={"rounded"}
           alt="The image"

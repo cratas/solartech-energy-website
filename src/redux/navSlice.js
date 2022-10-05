@@ -18,6 +18,9 @@ const navSlice = createSlice({
     linkContact(state) {
       state.currentPage = NAVIGATION.contact;
     },
+    linkPhotovoltaics(state) {
+      state.currentPage = NAVIGATION.photovoltaics;
+    },
   },
 });
 

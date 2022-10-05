@@ -3,7 +3,7 @@
   border-radius: 0.5rem;
   padding: 0.55rem 1.9rem;
   font-weight: 600;
-  max-width: 10rem;
+  /* max-width: 11rem; */
   height: 3rem;
   border: 2px solid var(--color-light-blue);
 }
