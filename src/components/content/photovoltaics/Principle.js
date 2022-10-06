@@ -34,7 +34,8 @@ const Principle = () => {
         </Box>
         <Box
           display="flex"
-          py={5}
+          pb={5}
+          pt={2}
           px={{ xs: 0, md: 15 }}
           flexDirection={{ xs: "column", md: "row" }}
           data-aos="fade-up"

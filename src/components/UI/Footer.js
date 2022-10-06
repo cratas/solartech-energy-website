@@ -52,7 +52,7 @@ export const Footer = () => {
               color="var(--color-white)"
               style={{ marginRight: "2rem" }}
             >
-              Fotovoltaické elektrárny
+              Fotovoltaika
             </Typography>
           </Link>
           <Link

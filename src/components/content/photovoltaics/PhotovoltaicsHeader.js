@@ -17,7 +17,7 @@ const PhotovoltaicsHeader = () => {
   return (
     <Container>
       <Heading
-        miniTitle="Cílová skupina"
+        miniTitle="Fotovoltaika"
         title={
           <span>
             <span style={{ color: "var(--color-light-blue)" }}>
@@ -69,32 +69,39 @@ const PhotovoltaicsHeader = () => {
             md: "flex-start",
           }}
           pt={3}
-          // backgroundColor="red"
         >
-          <ListItem
-            text={
-              <span>
-                Roční průměrná úspora <br />
-                až 80% nákladů.
-              </span>
-            }
-          />
-          <ListItem
-            text={
-              <span>
-                Garantujeme získání <br />
-                státní dotace.
-              </span>
-            }
-          />
-          <ListItem
-            text={
-              <span>
-                Vše zařídíme za Vás,
-                <br /> řešení na klíč bez starostí.
-              </span>
-            }
-          />
+          <Box display="flex" flexDirection={"column"} alignItems="flex-start">
+            <ListItem
+              text={
+                <span>
+                  Roční průměrná úspora <br />
+                  až 80% nákladů.
+                </span>
+              }
+              variant="h5"
+              fontWeight={"bold"}
+            />
+            <ListItem
+              text={
+                <span>
+                  Garantujeme získání <br />
+                  státní dotace.
+                </span>
+              }
+              variant="h5"
+              fontWeight={"bold"}
+            />
+            <ListItem
+              text={
+                <span>
+                  Vše zařídíme za Vás,
+                  <br /> řešení na klíč bez starostí.
+                </span>
+              }
+              variant="h5"
+              fontWeight={"bold"}
+            />
+          </Box>
           <Box mt={7}>
             <Link to="/contact">
               <MyButton

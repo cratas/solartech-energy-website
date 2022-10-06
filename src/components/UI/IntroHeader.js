@@ -71,8 +71,8 @@ export const IntroHeader = ({ scrollingRef }) => {
         textAlign="center"
         pt={5}
         pb={8}
-        data-aos="fade-in"
-        data-aos-delay="350"
+        data-aos="fade-up"
+        data-aos-delay="150"
       >
         <MyButton text="Zjistit více" onButtonClick={handeFindOutMoreButton} />
       </Box>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/system";
-import { Avatar, Divider, Typography } from "@mui/material";
+import { Avatar, Typography } from "@mui/material";
 import { FaQuoteLeft } from "react-icons/fa";
 
 export const ClientCard = ({ name, feedback, city, image, isMiddle }) => {

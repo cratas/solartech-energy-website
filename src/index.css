@@ -9,14 +9,16 @@ body {
   --color-white: #f6f6f6;
   --color-dark-white: rgb(235, 235, 235);
 
+  /* red colours */
+  --color-red: rgb(255, 0, 0);
 
-  --color-light-grey: #C6C6C6;
+  --color-light-grey: #c6c6c6;
   --color-grey: #727272;
 
   /* navy colours */
-  --color-light-blue: #067FBA;
+  --color-light-blue: #067fba;
   --color-blue: #056290;
-  --color-dark-blue: #03253A;
+  --color-dark-blue: #03253a;
 
   /* yellow colours */
   --color-yellow: #f6ae2d;

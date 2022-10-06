@@ -104,7 +104,7 @@ const NavbarContainer = () => {
                 className={photovoltaicsClasses}
               >
                 <Typography style={{ fontWeight: "bold" }}>
-                  Fotovoltaické elektrárny
+                  Fotovoltaika
                 </Typography>
               </Link>
 
