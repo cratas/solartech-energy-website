@@ -35,19 +35,20 @@ export const ContactInfo = () => {
           <Grid item xs={12} md={4} data-aos="fade-in" data-aos-delay="300">
             <ContactInfoCard
               icon={<MdLocationPin size={30} color={iconColor} />}
-              text="Bernartice nad Odrou"
+              // TODO: fill proper location of company
+              text="-"
             />
           </Grid>
           <Grid item xs={12} md={4} data-aos="fade-in" data-aos-delay="350">
             <ContactInfoCard
               icon={<AiFillPhone size={30} color={iconColor} />}
-              text="+420 662 212 222"
+              text="+420 724 023 264"
             />
           </Grid>
           <Grid item xs={12} md={4} data-aos="fade-in" data-aos-delay="400">
             <ContactInfoCard
               icon={<IoMdMail size={30} color={iconColor} />}
-              text="blitztech@info.com"
+              text="info@solartechenergy.cz"
             />
           </Grid>
         </Grid>

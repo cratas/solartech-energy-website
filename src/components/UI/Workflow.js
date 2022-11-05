@@ -20,25 +20,25 @@ export const Workflow = () => {
           isLeftAligned={false}
           number="01."
           title="Analýza a požadavky"
-          text="Hned po připojení do sítě pošleme veškerou dokumentaci na Státní fond životního prostředí. Jakmile úředníci dokumenty zpracují, vyplatí vám dotaci na účet."
+          text="Zpracujeme kompletní studii co nejvýhodnějšího řešení přímo pro Váš dům s ohledem na Vaše potřeby. Vypracujeme cenovou nabídku a zkontrolujeme technickou připravenost."
         />
         <Step
           isLeftAligned={true}
           number="02."
-          title="Instalace"
-          text="Hned po připojení do sítě pošleme veškerou dokumentaci na Státní fond životního prostředí. Jakmile úředníci dokumenty zpracují, vyplatí vám dotaci na účet."
+          title="Administrativa"
+          text="Po podpisu objednávky, zařídíme zpracování technického projektu a veškerou nutnou administrativu spojenou  s garancí nejvýhodnější dotace."
         />
         <Step
           isLeftAligned={false}
           number="03."
-          title="Vyplacení dotace"
-          text="Hned po připojení do sítě pošleme veškerou dokumentaci na Státní fond životního prostředí. Jakmile úředníci dokumenty zpracují, vyplatí vám dotaci na účet."
+          title="Instalace"
+          text="rovedeme kvalitně instalaci v co nejdřívějším termínu a zajistíme návštěvu revizního technika."
         />
         <Step
           isLeftAligned={true}
           number="04."
-          title="Zachování kontaktu"
-          text="Hned po připojení do sítě pošleme veškerou dokumentaci na Státní fond životního prostředí. Jakmile úředníci dokumenty zpracují, vyplatí vám dotaci na účet."
+          title="Šetříme Vaše finance"
+          text="Konečně si můžete začít naplno užívat pocit energetické samostatnosti a šetřit své finance."
         />
       </Box>
     </Container>

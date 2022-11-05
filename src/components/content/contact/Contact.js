@@ -34,6 +34,7 @@ const Contact = () => {
             variant="h4"
           />
 
+          {/* TODO: fill proper location */}
           <iframe
             title="google api map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.2770282607394!2d18.049371115935266!3d49.66792015131828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713ebe4d12c0f3f%3A0xf8a26f1995547382!2sBarto%C5%A1ovice%20393%2C%20742%2054%20Barto%C5%A1ovice!5e0!3m2!1scs!2scz!4v1652778382203!5m2!1scs!2scz"

@@ -84,7 +84,7 @@ export const Questions = () => {
                   : "var(--color-dark-blue)"
               }
             >
-              Co je to fotovoltaická elektrárna?
+              Jak funguje fotovoltaika?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -96,8 +96,14 @@ export const Questions = () => {
               }
               pl={"5%"}
             >
-              Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-              feugiat. Aliquam eget maximus est, id dignissim quam.
+              Fotovoltaika představuje přeměnu slunečního záření na elektřinu
+              pomocí fotovoltaického jevu. Zjednodušeně řečeno tento jev spočívá
+              v tom, že fotony slunečního záření dopadají na solární články a
+              svojí energií uvolňují elektrony, které vytváří elektrické napětí.
+              To se při uzavření obvodu přemění na elektrický proud. Jednotlivé
+              fotovoltaické články se zapojují do větších celků –
+              fotovoltaických panelů. Nejpoužívanějším materiálem pro výrobu
+              fotovoltaických článků je křemík.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -145,7 +151,7 @@ export const Questions = () => {
                   : "var(--color-dark-blue)"
               }
             >
-              You are currently not an owner
+              Jaká je účinnost fotovoltaiky?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -157,9 +163,17 @@ export const Questions = () => {
               }
               pl={"5%"}
             >
-              Donec placerat, lectus sed mattis semper, neque lectus feugiat
-              lectus, varius pulvinar diam eros in elit. Pellentesque convallis
-              laoreet laoreet.
+              Fotovoltaické panely, které se umisťují na střechy domů, dokážou
+              přeměnit na elektřinu až 20 % solární energie. Klíčovým faktorem
+              je optimální umístění fotovoltaiky na střechu. Ideální orientace
+              je směrem na jih, jihozápad nebo jihovýchod, aby články pohltily
+              maximum slunečních paprsků během dne. Důležitý je také sklon
+              panelu, jako nejlepší se uvádí umístění na šikmou střechu se
+              sklonem 35°. ýkon fotovoltaických panelů se uvádí v jednotce
+              Wattpeak (Wp). To je tzv. špičkový výkon, který udává výkon při
+              ideálních podmínkách. Ty jsou stanoveny na intenzitu světelného
+              záření 1000 W/m2, které dopadá kolmo na fotovoltaický panel o
+              teplotě 25 °C, při průzračnosti atmosféry Am = 1,5.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -207,7 +221,7 @@ export const Questions = () => {
                   : "var(--color-dark-blue)"
               }
             >
-              Filtering has been entirely disabled for whole web server
+              Kde v ČR se fotovoltaika vyplatí?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -219,12 +233,19 @@ export const Questions = () => {
               }
               pl={"5%"}
             >
-              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
-              sit amet egestas eros, vitae egestas augue. Duis vel est augue.
+              Častým argumentem odpůrců fotovoltaiky je to, že v podmínkách
+              České republiky nesvítí slunce dostatečně, aby se výroba elektřiny
+              ze slunečního záření vyplatila. V Česku svítí slunce v průměru
+              1330–1800 hodin za rok. Během letních měsíců u nás dopadá na jižně
+              orientovanou plochu 7–8 kWh za den, v zimě je to jen 3 kWh. K
+              několikanásobnému snížení intenzity záření dochází kvůli špatnému
+              počasí nebo znečištění atmosféry. Obecně lze říci, že instalace
+              fotovoltaiky se nejvíce vyplatí v oblasti severní Moravy, nejméně
+              vhodnou lokalitou jsou severní Čechy.
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion
+        {/* <Accordion
           expanded={expanded === "panel4"}
           onChange={handleChange("panel4")}
           sx={AccordionStyle}
@@ -234,8 +255,8 @@ export const Questions = () => {
                 ? "var(--color-dark-blue)"
                 : "var(--color-white)",
           }}
-        >
-          <AccordionSummary
+        > */}
+        {/* <AccordionSummary
             expandIcon={
               <ExpandMoreIcon
                 fontSize="large"
@@ -283,8 +304,8 @@ export const Questions = () => {
               Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
               sit amet egestas eros, vitae egestas augue. Duis vel est augue.
             </Typography>
-          </AccordionDetails>
-        </Accordion>
+          </AccordionDetails> */}
+        {/* </Accordion> */}
       </Container>
     </Box>
   );

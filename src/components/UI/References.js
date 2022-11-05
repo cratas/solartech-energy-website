@@ -24,7 +24,10 @@ export const References = () => {
           <Grid item xs={12} md={4}>
             <ClientCard
               image={menImageFirst}
-              name="Kamil Kadur"
+              feedback={
+                "Chci poděkovat za příjemnou komunikaci a skvěle odvedenou práci. Střechaři i elektrikáři odvedli špičkovou práci. Byli milí, ochotní a vstřícní."
+              }
+              name="Kamil Švec"
               city="Krmelín"
             />
           </Grid>
@@ -32,6 +35,9 @@ export const References = () => {
             <ClientCard
               image={menImageSecond}
               name="Jiří Palla"
+              feedback={
+                "Perfektní spolupráce. Moc děkuji celému týmu. Do budoucna budu uvažovat i o rozšíření, případně pořízení autonabíječky."
+              }
               city="Příbor"
               isMiddle={true}
             />
@@ -39,8 +45,11 @@ export const References = () => {
           <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="150">
             <ClientCard
               image={womanImage}
-              name="Vlasta Brdová"
+              name="Petra Brdová"
               city="Šumperk"
+              feedback={
+                "Děkujeme za instalaci fotovoltaiky na náš rodinný dům. Musím říci, že jsem příjemně překvapen, jak celý proces proběhl (i v dnešní složité době) plynule a hladce."
+              }
             />
           </Grid>
         </Grid>

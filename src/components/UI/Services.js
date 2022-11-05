@@ -28,23 +28,23 @@ export const Services = ({ scrollingRef }) => {
       />
 
       <Grid container pb={6} spacing={5} data-aos="fade-up">
-        <Grid item xs={12} md={4}>
-          <ServiceCard
-            text="Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vyřesíme za Vás. Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vyřesíme za Vás."
-            title="Fotovoltaické elektrárny"
-            image={solarPanelImage}
-          />
-        </Grid>
         <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="50">
           <ServiceCard
-            text="Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vyřesíme za Vás. Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vás."
+            text="Kromě akumulace energie do baterie a do ohřevu teplé užitkové vody v bojleru je dalším rozumným způsobem, jak zamezit zbytečnému přetoku elektřiny do distribuční sítě, směřovat elektřinu k dobíjení elektromobilu."
             title="Nabíjecí stanice"
             image={chargingImage}
           />
         </Grid>
+        <Grid item xs={12} md={4}>
+          <ServiceCard
+            text="Nabízíme kompletní řešení fotovoltaické elektrárny, která je schopna převádět sluneční záření na elektřinu prostřednictvím fotovoltaických panelů, které jsou umístěny na střechu domu."
+            title="Fotovoltaické elektrárny"
+            image={solarPanelImage}
+          />
+        </Grid>
         <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="100">
           <ServiceCard
-            text="Nabízíme kompletní řešení fotovoltaické elektrárny. Vše vyřesíme za Vás. Nabízíme kompletní řešení fotoektrárny. Vše vyřesíme za Vás."
+            text="Systém Full Back Up slouží jako efektivní řešení při výpadku proudu. Zálohujeme celý dům z baterií vaší fotovoltaické elektrárny, a to bez výrazných zásahů do rozvodů RD. Díky systému Full Back Up si rozsvítíte, i když bude všude kolem tma."
             title="Full Back Up"
             image={electricGeneratorImage}
           />

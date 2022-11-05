@@ -24,8 +24,7 @@ export const ClientCard = ({ name, feedback, city, image, isMiddle }) => {
             isMiddle ? "var(--color-pure-white)" : "var(--color-dark-blue)"
           }
         >
-          “Nabízime kompletní řešení fotovoltaické elektrárny. Vše vyřešíme za
-          Vás včerně vyřízení dotací.”
+          {feedback}
         </Typography>
       </Box>
 
