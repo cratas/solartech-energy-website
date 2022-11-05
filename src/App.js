@@ -10,6 +10,7 @@ import {
   responsiveFontSizes,
   ThemeProvider,
 } from "@mui/material/styles";
+import Loader from "./components/Loader/Loader";
 // or
 
 var theme = createTheme({
@@ -37,7 +38,19 @@ const ScrollToTop = () => {
 Aos.init({ duration: 500 });
 
 const App = () => {
-  return (
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
+  return isLoaded ? (
     <>
       <ThemeProvider theme={theme}>
         <Router>
@@ -47,6 +60,8 @@ const App = () => {
         </Router>
       </ThemeProvider>
     </>
+  ) : (
+    <Loader />
   );
 };
 

@@ -21,9 +21,9 @@ export const IntroHeader = ({ scrollingRef }) => {
           Šetříme <span style={{ color: "var(--color-dark-blue)" }}>Vaše</span>
           <br />
           <span style={{ color: "var(--color-dark-blue)" }}>
-            peníze za
+            peníze 
           </span>{" "}
-          elektřinu
+          za elektřinu
         </Typography>
       </Box>
 

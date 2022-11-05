@@ -13,9 +13,10 @@ export const IntroImage = () => {
         background:
           "linear-gradient(0deg, var(--color-dark-blue) 50%, var(--color-white) 50%)",
       }}
+      data-aos="zoom-in"
     >
       <Container>
-        <Box className={classes.imageWrapper} data-aos="zoom-in">
+        <Box className={classes.imageWrapper} >
           <div className={classes.rightTopDots}>
             <DotsDesign variant={DOTS_COLOURS.dark_blue} />
           </div>
